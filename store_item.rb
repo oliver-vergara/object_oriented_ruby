@@ -15,7 +15,7 @@ clothing = [
     quantity: 70},
   {type: "jacket",
       color: "black",
-      price: 40,
+      
       quantity: 30}
 ]
 
