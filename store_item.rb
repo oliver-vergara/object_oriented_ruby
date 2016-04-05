@@ -13,7 +13,7 @@ clothing = [
     color: "grey",
     price: 35,
     quantity: 70},
-    {type: "jacket",
+  {type: "jacket",
       color: "black",
       price: 40,
       quantity: 30}
