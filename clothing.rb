@@ -1,32 +1,35 @@
 class Clothing
-  def initialize (type, color, price, quantity)
-    @type = type
-    @color = color
-    @price = price
-    @quantity = quantity
+  attr_accessor :type, :color, :price, :quantity
+  def initialize (info)
+    @type = info[:type]
+    @color = info[:color]
+    @price = info[:price]
+    @quantity = info[:quantity]
   end
 
-  def type
-    @type
-  end
+  # def type
+  #   @type
+  # end
 
-  def color
-    @color
-  end
+  # def color
+  #   @color
+  # end
 
-  def price
-    @price
-  end
+  # def price
+  #   @price
+  # end
 
-  def quantity
-    @quantity
-  end
+  # def quantity
+  #   @quantity
+  # end
 end
 
   
-  shirt = Clothing.new("shirt", "blue", 20, 100)
-  jeans = Clothing.new("jeans", "denim", 60, 80)
-  hoodie = Clothing.new("hoodie", "grey", 35, 70)
-  jacket = Clothing.new("jacket", "black", 30, 40)
+  shirt = Clothing.new({type:"shirt", color:"blue", price:20, quantity:100})
+  jeans = Clothing.new({type:"jeans", color:"denim", price:60, quantity:80})
+  hoodie = Clothing.new(type:"hoodie", color:"grey", price:35, quantity:70)
+  jacket = Clothing.new({type:"jacket", color:"black", price:30, quantity:40})
 
-  p shirt.color
+  p jeans.quantity
+  p hoodie
+  p shirt.type
