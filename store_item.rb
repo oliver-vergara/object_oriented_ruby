@@ -1,4 +1,4 @@
-clothing = [
+clothings = [
   {type: "shirt",
     color: "blue",
     price: 20,
@@ -19,4 +19,4 @@ clothing = [
       quantity: 30}
 ]
 
-p clothing
+p clothings
